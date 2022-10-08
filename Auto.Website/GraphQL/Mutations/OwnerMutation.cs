@@ -34,7 +34,7 @@ public class OwnerMutation : ObjectGraphType
             SecondName = "secondName",
             Mail = "email",
             PhoneNumber = "1111",
-            VehicleCode = "HVT266H"
+            VehicleRegistration = "HVT266H"
         };
 
         var id = _db.CreateOwner(newOwner);
