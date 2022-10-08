@@ -146,6 +146,7 @@ namespace Auto.Data {
         public void UpdateOwner(Owner owner)
         {
             owners[owner.OwnerId] = owner;
+            vehicles[owner.VehicleRegistration].Owner = owner;
         }
 
         public void DeleteOwner(string id)
