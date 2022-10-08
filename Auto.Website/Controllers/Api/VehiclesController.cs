@@ -59,7 +59,7 @@ namespace Auto.Website.Controllers.Api {
 		[HttpGet("{id}")]
 		public IActionResult Get(string id) {
 			var vehicle = db.FindVehicle(id);
-			var ownerId = vehicle.Owner.OwnerId;
+			var ownerId = vehicle.Owner?.OwnerId;
 			if (vehicle == default) return NotFound();
 			var json = vehicle.ToDynamic();
 			foreach (var prop in json)

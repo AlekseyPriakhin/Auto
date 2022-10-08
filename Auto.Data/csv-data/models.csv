@@ -127,6 +127,7 @@ bmw-m-roadster,bmw,M ROADSTER
 bmw-m1,bmw,M1
 bmw-m2,bmw,M2
 bmw-m3,bmw,M3
+bmw-m3-gtr,bmw,M3 GTR
 bmw-m4,bmw,M4
 bmw-m5,bmw,M5
 bmw-m6,bmw,M6
@@ -308,6 +309,7 @@ ford-ecosport,ford,ECOSPORT
 ford-edge,ford,EDGE
 ford-escort,ford,ESCORT
 ford-explorer,ford,EXPLORER
+ford-falcon-xb,ford,FALCON
 ford-fiesa,ford,FIESA
 ford-fiesta,ford,FIESTA
 ford-focus,ford,FOCUS

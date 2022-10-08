@@ -137,6 +137,7 @@ namespace Auto.Data {
         { 
             ownersIndexCounter++;
             owner.OwnerId = ownersIndexCounter.ToString();
+            owner.Vehicle = vehicles[owner.VehicleCode];
             vehicles[owner.VehicleCode].Owner = owner;
             owners.Add(ownersIndexCounter.ToString(),owner);
             return ownersIndexCounter.ToString();

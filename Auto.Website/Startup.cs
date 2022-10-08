@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.IO;
 using System.Reflection;
+using Auto.Website.GraphQL.Queries;
 using Auto.Website.GraphQL.Schemas;
 using GraphQL;
 using GraphQL.Server;
@@ -24,10 +25,11 @@ namespace Auto.Website {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddControllersWithViews().AddNewtonsoftJson();
             services.AddSingleton<IAutoDatabase, AutoCsvFileDatabase>();
-
+            services.AddGraphQL(b => b.AddSchema<AutoSchema>().AddSystemTextJson());
             services.AddSwaggerGen(
                 config => {
                     config.SwaggerDoc("v1", new OpenApiInfo() {
@@ -49,15 +51,16 @@ namespace Auto.Website {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            
+
+           
             app.UseHttpsRedirection();
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseRouting();
-            
+             
             app.UseSwagger();
             app.UseSwaggerUI();
-            
+            app.UseGraphQL();
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
