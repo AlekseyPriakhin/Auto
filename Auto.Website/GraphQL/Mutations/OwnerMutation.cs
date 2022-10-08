@@ -16,15 +16,18 @@ public class OwnerMutation : ObjectGraphType
 
         Field<OwnerGraphType>("createOwner")
             .Argument<string>("name")
-            .Resolve(Create);
+            .Resolve(CreateOwner);
         Field<OwnerGraphType>("updateOwner")
             .Argument<int>("id")
             .Argument<string>("newName")
             .Argument<string>("newSecondName")
-            .Resolve(Update);
+            .Resolve(UpdateOwner);
+        Field<OwnerGraphType>("deleteOwner")
+            .Argument<int>("id")
+            .Resolve(DeleteOwner);
     }
 
-    private Owner Create(IResolveFieldContext<object> context)
+    private Owner CreateOwner(IResolveFieldContext<object> context)
     {
         var name = context.GetArgument<string>("name");
 
@@ -34,7 +37,7 @@ public class OwnerMutation : ObjectGraphType
             SecondName = "secondName",
             Mail = "email",
             PhoneNumber = "1111",
-            VehicleCode = "HVT266H"
+            VehicleRegistration = "HVT266H"
         };
 
         var id = _db.CreateOwner(newOwner);
@@ -42,7 +45,7 @@ public class OwnerMutation : ObjectGraphType
         return _db.FindOwner(id);
     }
 
-    private Owner Update(IResolveFieldContext<object> context)
+    private Owner UpdateOwner(IResolveFieldContext<object> context)
     {
         var id = context.GetArgument<int>("id").ToString();
         var owner = _db.FindOwner(id);
@@ -51,4 +54,14 @@ public class OwnerMutation : ObjectGraphType
         _db.UpdateOwner(owner);
         return _db.FindOwner(id);
     }
+
+    private Owner DeleteOwner(IResolveFieldContext<object> context)
+    {
+        var id = context.GetArgument<int>("id").ToString();
+        var owner = _db.FindOwner(id);
+        _db.DeleteOwner(id);
+        return owner;
+    }
+    
+    
 }
