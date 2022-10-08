@@ -74,7 +74,7 @@ namespace Auto.Website.Controllers.Api
             result._links = new
             {
                 self = $"/api/owners/{owner.OwnerId}",
-                vehicle = $"/api/vehicles/{owner.VehicleCode}"
+                vehicle = $"/api/vehicles/{owner.VehicleRegistration}"
             };
 
             result._actions = new
@@ -104,7 +104,7 @@ namespace Auto.Website.Controllers.Api
                 SecondName = dto.SecondName,
                 Mail = dto.Mail,
                 PhoneNumber = dto.PhoneNumber,
-                VehicleCode = dto.VehicleCode
+                VehicleRegistration = dto.VehicleCode
             };
             var ownerId = db.CreateOwner(newOwner);
             if (ownerId == null) return BadRequest();
@@ -123,7 +123,7 @@ namespace Auto.Website.Controllers.Api
                 SecondName = dto.SecondName,
                 Mail = dto.Mail,
                 PhoneNumber = dto.PhoneNumber,
-                VehicleCode = dto.VehicleCode
+                VehicleRegistration = dto.VehicleCode
             };
             db.UpdateOwner(updatedOwner);
             return Get(id);

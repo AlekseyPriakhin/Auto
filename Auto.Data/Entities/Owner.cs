@@ -10,7 +10,7 @@ public class Owner
     public string Mail { get; set; }
     public string PhoneNumber { get; set; }
     
-    public string VehicleCode { get; set; }
+    public string VehicleRegistration { get; set; }
     
     [JsonIgnore]
     public virtual Vehicle Vehicle { get; set; }

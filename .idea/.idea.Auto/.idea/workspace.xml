@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/csv-data/models.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/csv-data/models.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/csv-data/owners.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/csv-data/owners.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/csv-data/vehicles.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/csv-data/vehicles.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/VehiclesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/OwnersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/OwnersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/OwnerQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/OwnerQuery.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +117,11 @@
       <workItem from="1665069218206" duration="1683000" />
       <workItem from="1665162819863" duration="3185000" />
       <workItem from="1665179863655" duration="433000" />
+      <workItem from="1665223033543" duration="393000" />
+      <workItem from="1665232544443" duration="290000" />
+      <workItem from="1665234079828" duration="36000" />
+      <workItem from="1665234784912" duration="1907000" />
+      <workItem from="1665241203704" duration="728000" />
     </task>
     <task id="LOCAL-00001" summary="Init with REST">
       <created>1664871271165</created>
@@ -135,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664910926365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update REST">
+      <created>1665223071664</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665223071664</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add GraphQL">
+      <created>1665223089229</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665223089229</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +177,8 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init with REST" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init with REST" />
+    <MESSAGE value="Update REST" />
+    <MESSAGE value="Add GraphQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GraphQL" />
   </component>
 </project>

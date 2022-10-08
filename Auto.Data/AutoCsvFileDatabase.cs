@@ -42,8 +42,8 @@ namespace Auto.Data {
 
             foreach (var owner in owners.Values)
             {
-                owner.Vehicle = vehicles[owner.VehicleCode];
-                vehicles[owner.VehicleCode].Owner = owner;
+                owner.Vehicle = vehicles[owner.VehicleRegistration];
+                vehicles[owner.VehicleRegistration].Owner = owner;
             }
         }
 
@@ -107,7 +107,7 @@ namespace Auto.Data {
                     SecondName = tokens[2],
                     Mail = tokens[3],
                     PhoneNumber = tokens[4],
-                    VehicleCode = tokens[5]
+                    VehicleRegistration = tokens[5]
                 };
                 owners.Add(mfr.OwnerId, mfr);
             }
@@ -137,8 +137,8 @@ namespace Auto.Data {
         { 
             ownersIndexCounter++;
             owner.OwnerId = ownersIndexCounter.ToString();
-            owner.Vehicle = vehicles[owner.VehicleCode];
-            vehicles[owner.VehicleCode].Owner = owner;
+            owner.Vehicle = vehicles[owner.VehicleRegistration];
+            vehicles[owner.VehicleRegistration].Owner = owner;
             owners.Add(ownersIndexCounter.ToString(),owner);
             return ownersIndexCounter.ToString();
         }
@@ -150,7 +150,7 @@ namespace Auto.Data {
 
         public void DeleteOwner(string id)
         {
-            vehicles[owners[id].VehicleCode].Owner = null;
+            vehicles[owners[id].VehicleRegistration].Owner = null;
             owners.Remove(id);
         }
 
