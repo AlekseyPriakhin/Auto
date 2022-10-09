@@ -18,16 +18,15 @@ public class OwnerQuery : ObjectGraphType
     {
         _db = db;
         Field<OwnerGraphType>("ownerById")
-            .Argument<int>("id")
+            .Argument<IntGraphType>("id")
             .Resolve(OwnerById);
         Field<ListGraphType<OwnerGraphType>>("owners")
             .Resolve(GetOwners);
         Field<OwnerGraphType>("ownerByFullName")
-            .Argument<string>("firstName")
-            .Argument<string>("secondName")
+            .Argument<StringGraphType>("name")
             .Resolve(OwnerByFullName);
         Field<OwnerGraphType>("ownerByVehicleRegistration")
-            .Argument<string>("registration")
+            .Argument<StringGraphType>("registration")
             .Resolve(OwnerByVehicleRegistration);
     }
 
@@ -53,14 +52,12 @@ public class OwnerQuery : ObjectGraphType
     
     private Owner OwnerByFullName(IResolveFieldContext<object> context)
     {
-        var firstName = context.GetArgument<string>("firstName");
-        var secondName = context.GetArgument<string>("secondName");
+        var tokens = context.GetArgument<string>("name").Split(" ");
         var owner = _db.ListOwners()
             .FirstOrDefault(
-                o => o.Name.Equals(firstName) 
-                     && o.SecondName.Equals(secondName)
+                o => o.Name.Equals(tokens[0]) 
+                     && o.SecondName.Equals(tokens[1])
                      );
         return owner;
     }
-    
 }

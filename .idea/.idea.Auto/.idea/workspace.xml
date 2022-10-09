@@ -4,8 +4,9 @@
     <projectFile profileName="Auto.Website">Auto.Website/Auto.Website.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="Add mutations">
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" afterDir="false" />
+    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/OwnerQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/OwnerQuery.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +27,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9ac0932da2c62391ec516229efa086794b2b7557671c036ab3e5c3bf45e/GraphQLHttpApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6771d4a4cce39ed533223dc35ed9620b1989fcc3687851d2e401ac1aa69f6f8/SwaggerUIBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aleksey/Desktop/Auto/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ae7e48fc7fd4b80ba5c8bbc9825f677c5d9d21e17c4c1dbdd26da19315ce9b/AltairApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3aeb19f8566da7c4a5c4469d39bb573b4bad338c167f8de1cd3caea0e13fe49/ScopedFieldBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6b8664f0d9aa3f91a2dea54d30296f7e25ca4b4789cb91b168b1b76aff997dea/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b362b454b5bc03b2a6c0531794814e59c8d3c8e1016dfbafe5914c3564e57/ISchema.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ca6b9cf28fc68759813bdd857d7cf1ce778bc6d8e8886df025cdc4dc51c2e7/ComplexGraphType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52cd844476ec4091838909409447be01a23688/50/51b92469/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aleksey/Desktop/Auto/Auto.Website/GraphQL/Queries/OwnerQuery.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2Ew6Zb1LwvbS7RjBzmRikDDK1h9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -118,7 +120,10 @@
       <workItem from="1665232544443" duration="290000" />
       <workItem from="1665234079828" duration="36000" />
       <workItem from="1665234784912" duration="1907000" />
-      <workItem from="1665241203704" duration="1097000" />
+      <workItem from="1665241203704" duration="1161000" />
+      <workItem from="1665258008154" duration="12780000" />
+      <workItem from="1665326603056" duration="1922000" />
+      <workItem from="1665334271786" duration="4086000" />
     </task>
     <task id="LOCAL-00001" summary="Init with REST">
       <created>1664871271165</created>
@@ -169,7 +174,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665242488916</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix Create Mutation">
+      <created>1665242648037</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665242648037</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update UpdateOwner Method">
+      <created>1665270314281</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665270314281</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update UpdateOwner Method">
+      <created>1665270358744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665270358744</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +226,9 @@
     <MESSAGE value="Rename VehicleCode property to VehicleRegistration" />
     <MESSAGE value="Add queries" />
     <MESSAGE value="Add mutations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add mutations" />
+    <MESSAGE value="Fix Create Mutation" />
+    <MESSAGE value="Update Mutations" />
+    <MESSAGE value="Update UpdateOwner Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update UpdateOwner Method" />
   </component>
 </project>
