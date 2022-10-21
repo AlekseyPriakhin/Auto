@@ -1,9 +1,13 @@
-﻿using System.Dynamic;
+﻿using System;
+using System.Dynamic;
 using System.Linq;
 using System.Runtime.Intrinsics.Arm;
+using System.Threading.Tasks;
 using Auto.Data;
 using Auto.Data.Entities;
+using Auto.Messages;
 using Auto.Website.Models;
+using EasyNetQ;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Auto.Website.Controllers.Api
@@ -12,9 +16,11 @@ namespace Auto.Website.Controllers.Api
     [ApiController]
     public class OwnersController : ControllerBase {
         private readonly IAutoDatabase db;
+        private readonly IBus bus;
 
-        public OwnersController(IAutoDatabase db) {
+        public OwnersController(IAutoDatabase db,IBus bus) {
             this.db = db;
+            this.bus = bus;
         }
         
         private dynamic Paginate(string url, int index , int total,int count = 5) {
@@ -95,8 +101,7 @@ namespace Auto.Website.Controllers.Api
         }
 
         [HttpPost]
-
-        public IActionResult Post([FromBody] OwnerDTO dto)
+        public async  Task<IActionResult> Post([FromBody] OwnerDTO dto)
         {
             var newOwner = new Owner
             {
@@ -104,12 +109,31 @@ namespace Auto.Website.Controllers.Api
                 SecondName = dto.SecondName,
                 Mail = dto.Mail,
                 PhoneNumber = dto.PhoneNumber,
-                VehicleRegistration = dto.VehicleCode
+                VehicleRegistration = dto.VehicleRegistration
             };
             var ownerId = db.CreateOwner(newOwner);
+            var o = db.FindOwner(ownerId);
+            Console.WriteLine(o.OwnerId);
+            await PublishNewOwnerMessage(db.FindOwner(ownerId));
             if (ownerId == null) return BadRequest();
             return Get(ownerId);
         }
+
+        private async Task PublishNewOwnerMessage(Owner owner)
+        {
+            var newOwnerMessage = new NewOwnerMessage
+            {
+                Name = owner.Name,
+                SecondName = owner.SecondName,
+                Mail = owner.Mail,
+                PhoneNumber = owner.PhoneNumber,
+                OwnerId = owner.OwnerId,
+                VehicleRegistration = owner.VehicleRegistration,
+                CreatedAtUtc = DateTime.UtcNow
+            };
+            await bus.PubSub.PublishAsync(newOwnerMessage);
+        }
+        
         
         [HttpPut("{id}")]
         public IActionResult Put(string id, [FromBody] OwnerDTO dto)
@@ -123,7 +147,7 @@ namespace Auto.Website.Controllers.Api
                 SecondName = dto.SecondName,
                 Mail = dto.Mail,
                 PhoneNumber = dto.PhoneNumber,
-                VehicleRegistration = dto.VehicleCode
+                VehicleRegistration = dto.VehicleRegistration
             };
             db.UpdateOwner(updatedOwner);
             return Get(id);

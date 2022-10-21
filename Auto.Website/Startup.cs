@@ -9,6 +9,7 @@ using System.IO;
 using System.Reflection;
 using Auto.Website.GraphQL.Queries;
 using Auto.Website.GraphQL.Schemas;
+using EasyNetQ;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Types;
@@ -39,6 +40,8 @@ namespace Auto.Website {
                     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                     config.IncludeXmlComments(xmlPath);
                 });
+            var bus = RabbitHutch.CreateBus("host=localhost;timeout=120");
+            services.AddSingleton(bus);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
