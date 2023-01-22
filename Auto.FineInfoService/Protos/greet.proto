@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Auto.FineInfo";
+
+package greet;
+
+service FineInfoService {
+  rpc GetFineInfo (FineRequest) returns (FineResponse);
+}
+
+message FineRequest {
+  string firstName = 1;
+  string secondName = 2;
+  string vehicleRegistration = 3;
+}
+
+message FineResponse {
+  string fineStatus = 1;
+}

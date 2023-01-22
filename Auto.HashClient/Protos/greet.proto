@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "HashClient";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc GetOwnerHash (OwnerHashRequest) returns (OwnerHashResponse);
+}
+
+// The request message containing the user's name.
+message OwnerHashRequest {
+  string firstName = 1;
+  string secondName = 2;
+  string phoneNumber = 3;
+  string mail = 4;
+  string vehicleRegistration = 5;
+}
+
+// The response message containing the greetings.
+message OwnerHashResponse {
+  string response = 1;
+}

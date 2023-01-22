@@ -1,9 +1,5 @@
 ﻿using EasyNetQ;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
 using Auto.Messages;
 
 namespace Auto.AuditLog
@@ -17,7 +13,8 @@ namespace Auto.AuditLog
 
         static async Task Main(string[] args)
         {
-            using var bus = RabbitHutch.CreateBus("host=localhost;timeout=120");
+            var amqp = config.GetConnectionString("RabbitMQ");
+            using var bus = RabbitHutch.CreateBus(amqp);
             Console.WriteLine("Connected! Listening for NewOwnerMessage messages.");
             await bus.PubSub.SubscribeAsync<NewOwnerMessage>(SUBSCRIBER_ID, HandleNewOwnerMessage);
             Console.ReadKey();
@@ -25,7 +22,7 @@ namespace Auto.AuditLog
 
         private static void HandleNewOwnerMessage(NewOwnerMessage message)
         {
-            Console.WriteLine($"{message.Name} {message.SecondName} {message.OwnerId} {message.VehicleRegistration} {message.CreatedAtUtc}" );
+            Console.WriteLine($"{message.FirstName} {message.SecondName} {message.OwnerId} {message.VehicleRegistration} {message.CreatedAtUtc}" );
         }
 
         private static IConfigurationRoot ReadConfiguration()

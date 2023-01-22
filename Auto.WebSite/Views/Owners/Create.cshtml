@@ -1,0 +1,35 @@
+﻿@model WebApplication1.OwnerViewModel 
+
+@{
+    Layout = "_Layout";
+}
+
+<form
+    class="owner-input-form"
+    asp-action="Create"
+    asp-controller="Owners">
+
+    <header>Новый владелец</header>
+
+    <label asp-for="Name">Имя</label>
+    <input asp-for="Name"/>
+    <span asp-validation-for="Name"></span>
+
+    <label asp-for="SecondName">Фамилия</label>
+    <input asp-for="SecondName"/>
+    <span asp-validation-for="SecondName"></span>
+
+    <label asp-for="Mail">Электронная почта</label>
+    <input asp-for="Mail"/>
+    <span asp-validation-for="Mail"></span>
+
+    <label asp-for="PhoneNumber">Номер телефона</label>
+    <input asp-for="PhoneNumber"/>
+    <span asp-validation-for="PhoneNumber"></span>
+
+    <label asp-for="VehicleRegistration"> Номер автомобиля</label>
+    <input asp-for="VehicleRegistration"/>
+    <span asp-validation-for="VehicleRegistration"></span>
+
+    <button type="submit">Отправить</button>
+</form>

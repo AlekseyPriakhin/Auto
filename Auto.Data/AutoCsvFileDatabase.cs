@@ -103,7 +103,7 @@ namespace Auto.Data {
                 var tokens = line.Split(",");
                 var mfr = new Owner {
                     OwnerId = tokens[0],
-                    Name = tokens[1],
+                    FirstName = tokens[1],
                     SecondName = tokens[2],
                     Mail = tokens[3],
                     PhoneNumber = tokens[4],

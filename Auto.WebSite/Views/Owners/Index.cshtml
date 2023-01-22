@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Auto.Data.Entities.Owner>
+
+@{
+    Layout = "_Layout";
+}
+<div id="div">
+    <table class="table" id="owners-table">
+        <thead>
+            <th class="col-name" style="width: 20%;">Имя</th>
+            <th class="col-name" style="width: 20%">Фамилия</th>
+            <th class="col-name" style="width: 20%;">Электронная почта</th>
+            <th class="col-name" style="width: 20%;">Номер телефона</th>
+            <th class="col-name" style="width: 20%;">Номер автомобиля</th>
+        <tr class="table-row">
+        </tr>
+        </thead>
+        <tbody>
+         @foreach (var owner in Model) 
+         { 
+            <tr class="table-row"> 
+                <td class="table-cell">@owner.FirstName</td> 
+                <td class="table-cell">@owner.SecondName</td>
+                <td class="table-cell">@owner.Mail</td> 
+                <td class="table-cell">@owner.PhoneNumber</td> 
+                <td class="table-cell">@owner.VehicleRegistration</td>
+            </tr> 
+         } 
+        </tbody>
+    </table>
+</div>
