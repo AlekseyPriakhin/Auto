@@ -14,42 +14,7 @@
     <projectFile profileName="IIS Express">WebApplication1/WebApplication1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Auto.FineInfoClient/Auto.FineInfoClient.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.FineInfoService/Auto.FineInfoService.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.WebSite/Auto.WebSite.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.AuditLog/Auto.AuditLog.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/Auto.AuditLog.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Messages/Auto.Messages.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Messages/Auto.Messages.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Auto.WebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Controllers/Api/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/HypermediaExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Controllers/Api/HypermediaExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ModelsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Controllers/Api/ModelsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/OwnersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Controllers/Api/OwnersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Controllers/Api/VehiclesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/InputOwnerGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/GraphTypes/InputOwnerGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ManufacturerGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/GraphTypes/ManufacturerGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ModelGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/GraphTypes/ModelGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/OwnerGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/GraphTypes/OwnerGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/VehicleGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/GraphTypes/VehicleGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/OwnerMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/Mutations/OwnerMutation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/OwnerQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/Queries/OwnerQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queries/VehicleQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/Queries/VehicleQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Schemas/AutoSchema.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/GraphQL/Schemas/AutoSchema.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Models/OwnerDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Models/OwnerDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Models/VehicleDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Models/VehicleDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.sln" afterDir="false" />
-    </list>
+    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -443,6 +408,7 @@
       <workItem from="1674339169404" duration="162000" />
       <workItem from="1674389160135" duration="877000" />
       <workItem from="1674405009644" duration="3505000" />
+      <workItem from="1674414239244" duration="419000" />
     </task>
     <task id="LOCAL-00001" summary="Init with REST">
       <created>1664871271165</created>
@@ -528,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666395500162</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update Auto Project">
+      <created>1674414539138</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674414539138</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +537,8 @@
     <MESSAGE value="Update UpdateOwner Method" />
     <MESSAGE value="Update OwnerQuery" />
     <MESSAGE value="Add RabbitMQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add RabbitMQ" />
+    <MESSAGE value="Update Auto Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Auto Project" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
