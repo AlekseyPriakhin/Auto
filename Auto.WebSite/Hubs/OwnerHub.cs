@@ -1,5 +1,4 @@
-﻿using Auto.Messages;
-using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.SignalR;
 
 namespace WebApplication1.Hubs;
 

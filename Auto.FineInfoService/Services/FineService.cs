@@ -1,13 +1,12 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-using Grpc.Core;
+﻿using Grpc.Core;
 using Auto.FineInfo;
 namespace Auto.OwnerHashService.Services;
 
-public class OwnerService : FineInfoService.FineInfoServiceBase
+public class FineService : FineInfoService.FineInfoServiceBase
 {
     public override Task<FineResponse> GetFineInfo(FineRequest request, ServerCallContext context)
     {
+        Console.WriteLine($"Получен запрос {context.Host}");
         var i = new Random().Next(0,10);
         var fineInfoString = "";
         switch (i)
@@ -28,7 +27,6 @@ public class OwnerService : FineInfoService.FineInfoServiceBase
                 break;
             }
         }
-
         return Task.FromResult(new FineResponse(){FineStatus = fineInfoString});
     }
 }

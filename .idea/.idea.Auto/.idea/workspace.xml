@@ -12,9 +12,30 @@
     <projectFile profileName="Auto.OwnerHashService">Auto.OwnerHashService/Auto.OwnerHashService.csproj</projectFile>
     <projectFile profileName="WebApplication1">WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="IIS Express">WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile profileName="Auto.FineInfoService">Auto.FineInfoService/Auto.FineInfoService.csproj</projectFile>
+    <projectFile profileName="Auto.WebSite">Auto.WebSite/Auto.WebSite.csproj</projectFile>
+    <projectFile profileName="Auto.WebAPI">Auto.WebAPI/Auto.WebAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="" />
+    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.FineInfoClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.FineInfoClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.FineInfoService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.FineInfoService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.FineInfoService/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.FineInfoService/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.FineInfoService/Services/OwnerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.FineInfoService/Services/FineService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.HubNotifer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.HubNotifer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.HubNotifer/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.HubNotifer/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Messages/SecondMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Messages/OwnerSecondMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebAPI/Models/VehicleDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Models/VehicleDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebSite/Hubs/OwnerHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebSite/Hubs/OwnerHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebSite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebSite/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebSite/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebSite/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.WebSite/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.WebSite/wwwroot/js/site.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Auto.WebAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b362b454b5bc03b2a6c0531794814e59c8d3c8e1016dfbafe5914c3564e57/ISchema.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ca6b9cf28fc68759813bdd857d7cf1ce778bc6d8e8886df025cdc4dc51c2e7/ComplexGraphType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Auto.FineInfoService/Services/OwnerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Auto.FineInfoService/Services/FineService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.WebSite/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6771d4a4cce39ed533223dc35ed9620b1989fcc3687851d2e401ac1aa69f6f8/SwaggerUIBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.FineInfoService/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
@@ -48,7 +69,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bdfd6e5a9487a7b81e0f6646f3c7ecdbd47f018a18a31cda6874b8ebc494b/PubSubExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6b8664f0d9aa3f91a2dea54d30296f7e25ca4b4789cb91b168b1b76aff997dea/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.FineInfoClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Auto.HashClient/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52cd844476ec4091838909409447be01a23688/50/51b92469/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,10 +88,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="HotReloadSettingsPage" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Auto.gRPCClient">
+  <component name="RunManager" selected=".NET Project.Auto.HubNotifer">
     <configuration name="Auto.AuditLog" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -216,10 +236,55 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Auto.FineInfoService" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.FineInfoService/Auto.FineInfoService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Auto.FineInfoService" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Auto.OwnerHashService" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.FineInfoService/Auto.FineInfoService.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="Auto.OwnerHashService" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Auto.WebAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.WebAPI/Auto.WebAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Auto.WebAPI" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Auto.WebSite" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.WebSite/Auto.WebSite.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Auto.WebSite" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -409,6 +474,15 @@
       <workItem from="1674389160135" duration="877000" />
       <workItem from="1674405009644" duration="3505000" />
       <workItem from="1674414239244" duration="419000" />
+      <workItem from="1674414746875" duration="75000" />
+      <workItem from="1674418319837" duration="36000" />
+      <workItem from="1674420961212" duration="434000" />
+      <workItem from="1674421643603" duration="188000" />
+      <workItem from="1674422071110" duration="444000" />
+      <workItem from="1674422651262" duration="229000" />
+      <workItem from="1674436997543" duration="1508000" />
+      <workItem from="1674473382803" duration="695000" />
+      <workItem from="1674486875515" duration="5757000" />
     </task>
     <task id="LOCAL-00001" summary="Init with REST">
       <created>1664871271165</created>
@@ -501,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674414539138</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Remove projects">
+      <created>1674414783378</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674414783378</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +619,8 @@
     <MESSAGE value="Update OwnerQuery" />
     <MESSAGE value="Add RabbitMQ" />
     <MESSAGE value="Update Auto Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Auto Project" />
+    <MESSAGE value="Remove projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove projects" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

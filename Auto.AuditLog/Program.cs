@@ -15,14 +15,15 @@ namespace Auto.AuditLog
         {
             var amqp = config.GetConnectionString("RabbitMQ");
             using var bus = RabbitHutch.CreateBus(amqp);
-            Console.WriteLine("Connected! Listening for NewOwnerMessage messages.");
+            Console.WriteLine("Подключено, ожидаю сообщения о новых владельцах");
             await bus.PubSub.SubscribeAsync<NewOwnerMessage>(SUBSCRIBER_ID, HandleNewOwnerMessage);
             Console.ReadKey();
         }
 
         private static void HandleNewOwnerMessage(NewOwnerMessage message)
         {
-            Console.WriteLine($"{message.FirstName} {message.SecondName} {message.OwnerId} {message.VehicleRegistration} {message.CreatedAtUtc}" );
+            Console.WriteLine("Сообщение о новом владельце получено");
+            Console.WriteLine($"{message.FirstName}\n{message.SecondName}\n{message.OwnerId}\n{message.VehicleRegistration}" );
         }
 
         private static IConfigurationRoot ReadConfiguration()

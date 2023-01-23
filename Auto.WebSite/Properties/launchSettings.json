@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "WebApplication1": {
+    "Auto.WebSite": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

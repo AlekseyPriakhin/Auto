@@ -1,6 +1,6 @@
 ﻿namespace Auto.Messages;
 
-public class SecondMessage : NewOwnerMessage
+public class OwnerSecondMessage : NewOwnerMessage
 {
     public string FineStatus { get; set; }
 }

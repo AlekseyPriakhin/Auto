@@ -1,6 +1,5 @@
 ﻿$(document).ready(connectToSignalR);
 
-
 function connectToSignalR() {
     console.log("Connecting to SignalR...");
     const conn = new signalR.HubConnectionBuilder().withUrl("/ownerhub?group=owners").build();

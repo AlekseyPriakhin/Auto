@@ -1,6 +1,6 @@
 ﻿{ 
   "profiles": {
-    "Auto.Website": {
+    "Auto.WebAPI": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
